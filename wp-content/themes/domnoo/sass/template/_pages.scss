@@ -1,0 +1,90 @@
+// Contact Page
+//----------------------------------
+
+div.wpcf7-validation-errors{
+	margin: 0;
+	padding: 15px;
+}
+.contact-form-content{
+	padding: $theme-padding;
+	background: $contact-bg;
+	min-height: 260px;
+	.rounded{
+		@include rtl-margin-right(10px);
+		color: $white;
+		@include size(40px,40px);
+		background: darken($body-bg, 20%);
+		.fa,.icon{
+			@include font-size(font-size,16px);
+			margin: 13px;
+		}
+	}
+	small{
+		color: darken($text-color, 20%);
+	}
+}
+.user{
+	> div{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}
+// Page Not Found
+//----------------------------------
+.error404{
+	.apus-breadscrumb{
+		margin: 0;
+	}
+}
+.page-404{
+   background: #fff;
+   .not-found{
+   	padding: 70px 0 120px;
+   	max-width: 680px;
+   	margin: 0 auto;
+   }
+   .title-big{
+   		font-size: 42px;
+   		font-weight: 400;
+   		line-height: 1.1;
+   		letter-spacing: 1px;
+   }
+   .page-title{
+	    font-size: 39px;
+	    margin: 0 0 20px;
+	    text-transform: inherit;
+   }
+   .sub-title{
+   		margin: 50px 0;
+   		color: #999;
+	    font-size: 18px;
+	    a{
+	   		color: #000;
+	   	}
+    }
+   .icon{
+	   	font-size: 72px;
+	   	color: #000;
+   }
+   .search-form{
+   		margin: 55px 0;
+   }
+   .widget-newletter{
+   	margin-bottom: $theme-margin;
+   }
+}
+.blog-masonry{
+	.post-container{
+		margin-bottom: $theme-margin;
+		background-color: #fafafa;
+	}
+	.information-post {
+		padding: 15px;
+	}
+}
+
+.blog-list-item{
+	border-bottom:1px solid $border-color;
+}

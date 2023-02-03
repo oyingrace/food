@@ -1,0 +1,164 @@
+/* block */
+.#{$block-selector} {
+    margin-bottom: $block-module-margin-bottom;
+    position: relative;
+    padding: $block-module-padding;
+    background: transparent;
+    .#{$block-heading-selector}{
+        font-size: 18px;
+        font-weight: 400;
+        margin:0 0 30px;
+        padding: 0;
+        text-transform: capitalize;
+        position: relative;
+        font-family: $font-family-base;
+    }
+}
+.title-md{
+    font-size: 36px !important;
+    font-weight: 700 !important;
+}
+.wpb_video_widget .video-description{
+    padding: 10px;
+}
+// Sidebar
+.sidebar,
+.#{$app-prefix}-sidebar {
+    .widget{
+        margin: 0 0 80px;
+        overflow:hidden;
+        .widgettitle,
+        .widget-title{
+            text-transform: uppercase;
+            font-size: 20px;
+            margin: 0 0 25px;
+            font-weight: 700;
+            font-family: $font-family-base;
+            position: relative;
+        }
+    }
+    // widet porducts list
+    .apus-products-list{
+        border-style: solid;
+        border-color: $border-color;
+        border-width:0 1px 1px;
+        .product-block{
+            padding: 20px;
+            margin: 0;
+        }
+    }
+    // widget instagram
+    .row.instagram-pics{
+        margin-left: -6px;
+        margin-right: -6px;
+        > [class*="col-md"]{
+            padding-left: 6px;
+            padding-right: 6px;
+            margin-bottom: 12px;
+        }
+    }
+    .widget_categories{
+        li{
+            line-height: 32px;
+            font-size: 18px;
+            a{
+                color: #585858;
+                font-size:18px;
+                vertical-align: text-top;
+                &:before{
+                    content: "\f105";
+                    font-family: 'FontAwesome';
+                    display: inline-block;
+                    font-size: 20px;
+                    @include rtl-margin-right(20px);
+                }
+                &:hover,&:active{
+                    color: $link-color;
+                }
+            }
+        }
+    }
+    .widget-about,
+    .widget_categories,
+    .widget_apus_recent_post{
+        border:1px solid $border-color;
+        padding:25px 30px;
+        background:#fbfbfb;
+    }
+}
+// top bar
+#apus-topbar{
+    // widget info
+    .info-topbar{
+        .textwidget{
+            > span{
+                @include rtl-padding-right(10px);
+                @include rtl-margin-right(10px);
+                @include rtl-float-left();
+                @include rtl-border-right(1px solid $border-color);
+                &:last-child{
+                    border: 0;
+                }
+            }
+        }
+        .fa{
+            @include rtl-margin-right(8px);
+        }
+    }
+}
+// header
+.apus-search-form{
+    .select-category{
+        display: inline-block;
+        @include rtl-float-left();
+        overflow:hidden;
+        position: relative;
+        min-width: 240px;
+        &:before{
+            content: "\f107";
+            font-family: 'FontAwesome';
+            position: absolute;
+            @include rtl-right(30px);
+            top:50%;
+            @include translateY(-50%);
+            font-size: 18px;
+        }
+        .dropdown_product_cat{
+            border: 1px solid $border-color;
+            width: 115%;
+            height: $input-height-base;
+            padding: 10px 20px;
+        }
+    }
+}
+// footer
+.apus-footer{
+    .#{$block-heading-selector}{
+        color: $footer-heding-title-color;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 40px;
+    }
+    .widget-social .social {
+        > li a{
+            border-color:#fff !important;
+            color: #fff !important;
+            @include opacity(0.65);
+            @include transition(all 0.2s ease-in-out 0s);
+            &:hover,&:active{
+                @include opacity(1);
+            }
+        }        
+    }
+    .wpb_content_element,
+    .widget{
+        margin: 0 !important;
+    }
+}
+// copyright
+.apus-copyright{
+    .wpb_content_element,
+    .widget{
+        margin: 0 !important;
+    }    
+}
